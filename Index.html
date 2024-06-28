@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Isabelle" content="Sassenach Tour">
+    <meta name="Turismo, Escócia, Cultura Escocesa" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="Style.css">
+    <script src="index.js" async></script>
+    <title>Menu dropdown</title>
+</head>
+<body>
+    <nav>
+
+            <img id="Logo" src="logotipo.png" alt="" width="100">
+
+        <ul>
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">Serviços</a>
+            </li>
+            <li class="dropdown">
+                <a href="">Sobre nós</a>
+
+                <div class="dropdown-menu">
+                    <a href="">Contato</a>
+                    <a href="">Local</a>
+
+                </div>
+            </li>
+        </ul>
+       
+    </nav>
+
+    <!-- Criando um carrossel de imgs-->
+    <section class="slideshow-container block"> <!--Section é uma tag que define uma seção dentro de um documento web.-->
+       
+        <ul class="slides">
+            
+            
+          <li class="slide fade" data-active>
+            <img 
+              src="Img1.jpg" 
+              alt="" 
+            />
+            
+          </li>
+          <li class="slide fade">
+            <img 
+              src="Img2.jpg" 
+              alt="" 
+            />
+          </li>
+          <li class="slide fade">
+            <img 
+              src="Img3.jpg" 
+              alt="" 
+            />
+          </li>
+
+    
+        </ul>
+
+  
+        <button class="previous-button" data-change-slide-button="previous">&lt;</button> <!--Para colocar o sinal de menor que, foi usado uma entidade HTML-->
+        <button class="next-button" data-change-slide-button="next">&gt;</button> <!--Para colocar o sinal de maior que, foi usado uma entidade HTML-->
+  
+       </section>
+  
+       <H1 id="Titulo">Sassenach. Tour</H1>
+
+       <br></br>  <!-- Pulando linha-->
+       <br></br>  <!-- Pulando linha-->
+
+
+    <div class="container-card">
+      <div class="card">
+        <img class="imgs" src="nadin-thomson-ex1_JyDmJsk-unsplash.jpg" alt="Avatar" style="width: 115%;" height="70%">
+            <h4>The Devil´s Pulpit - Glasgow, UK</h4>
+            <p>aushauhsuahsuhsuahsuahsuashauhsuahsua</p>
+
+            <a class="link" href="">Click here</a>
+      </div>
+
+      <div class="card">
+        <img class="imgs" src="jack-anstey-XVoyX7l9ocY-unsplash.jpg" alt="Avatar" style="width: 115%;" height="70%">
+            <h4>Glenfinnan Viaduct, Glenfinnan, UK</h4>
+            <p>aushauhsuahsuhsuahsuahsuashauhsuahsua</p>
+
+            <a class="link" href="">Click here</a>
+      </div>
+
+      <div class="card">
+        <img class="imgs" src="george-hiles-ZHF033ykCx8-unsplash.jpg" alt="Avatar" style="width: 115%;" height="70%">
+            <h4>
+              Eilean Donan Castle, Dornie, UK</h4>
+            <p>aushauhsuahsuhsuahsuahsuashauhsuahsua</p>
+            <a class="link" href="">Click here</a>
+      </div>
+
+
+    </div>
+
+    <br></br>  <!-- Pulando linha-->
+    <br></br>  <!-- Pulando linha-->
+
+</body>
+</html>

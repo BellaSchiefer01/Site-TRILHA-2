@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #8F9779;
+}
+
+nav{
+    background: #444C38;
+    position: relative;
+    z-index: 1;
+}
+
+nav li{
+    display: inline-block;
+
+}
+
+nav li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+nav li a:hover{
+    background-color: #444C38;
+}
+
+.dropdown-menu{
+    position: absolute;
+    box-shadow: 0 0 2px black;
+    display: none; /*Não exibir ele por padrão*/
+}
+
+.dropdown-menu a{
+    display: block;
+    color: white;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+
+
+/*Colocando o logo la direita*/
+#Logo {
+    position: absolute; /* Posição está relativa com isso posso colocar imagem onde quiser*/
+    border-radius: 20px; /*Borda*/
+    right: 20PX;
+    height: 50px;
+    
+}
+
+/*Fazendo o Carrossel*/
+
+li{ /*Aqui está sendo retirada as bolinhas que vem por padrão ao colocar nossa Li*/
+    list-style-type: none;
+    /*uma propriedade CSS que remove os marcadores padrão de uma lista HTML. */
+}
+
+button{
+    cursor: pointer;
+    /*usada para alterar o cursor do mouse quando ele passa sobre um elemento HTML. 
+    Ela faz com que o cursor se torne uma mãozinha (normalmente associada a links)
+    quando passa sobre o elemento, indicando que o elemento é interativo e clicável.*/
+}
+
+.slideshow-container{
+    position: relative; /*uma propriedade CSS que define o posicionamento de um elemento em relação à
+    sua posição original no fluxo normal do documento HTML.*/
+
+    /*Quando é definido uma position: relative; em um elemento, você pode então ajustar sua posição utilizando
+    as propriedades top, right, bottom e left.*/
+
+    /*Ao definir position: relative;, o elemento permanece no fluxo normal do documento, mas agora pode ser movido
+    de sua posição original usando as propriedades mencionadas acima. */
+
+    /*s mudanças de posição não afetarão outros elementos no layout. Se você não definir as propriedades top, right,
+    bottom e left, o elemento permanecerá no mesmo lugar, mas ainda estará com position: relative;.*/
+
+    height: 100vh; /*Para fazer com que nossa section ocupe 100% do espaço disponível na tela do usuário,
+    independente do tamanho de sua tela, então essa imagem ira ocupar a altura inteira da tela desse usuário*/
+
+    overflow: hidden; /*Não tem mais a barra de rolagem aparecendo*/
+}
+
+.slides{
+    height: 100%; /*Para ela ocupar a mesma altura que a sessão slideshow-container*/
+
+}
+
+.slide {
+    width: 100%; /*Para cobrir o espaço inteiro na largura*/
+    height: 100%; /*Para ocupar a mesma altura que o slideshow-container*/
+
+    display: none;
+}
+
+.slide[data-active] {
+    display: block; /*é usada para definir um elemento como um bloco. */
+}
+/*Agora será estilizado as imgs*/
+.slide img {
+    width: 100%; /**/
+    height: 100%; /**/
+    object-fit: cover; /*Garante que as imgs não fiquem expremidas, garantindo que fiquem com a mesma proporção*/
+    object-position: center; /*Para garantir que se cortar as imgs com o object-fit cover, as imgs vão ficar centralizadas*/
+}
+
+.previous-button,
+.next-button {
+    position: absolute;
+    /*Essa Propriedade é usada para posicionar um elemento em relação ao seu contêiner pai mais próximo que tenha uma posição definida como relative,
+    absolute, fixed ou sticky.*/
+    top: 50%; 
+    transform: translateY(-50%); /*Para garantir que os botões realmente fiquem no centro*/
+
+    /*Mudando tamanho dos botões*/
+    width: 56px;
+    height: 56px;
+    font-size: 32px;
+    font-weight: bold;
+
+    color: #fff;
+    background: transparent;
+    border: 0;
+
+}
+
+.previous-button {
+    left: 0;
+    border-top-right-radius: 6px; /*Terá a borda arredondada em cima na esquerda*/
+    border-bottom-right-radius: 6px; /*Terá a borda arredondada em baixo na esquerda*/
+}
+.next-button { /*Colocando o botão na direita*/
+    right: 0;
+    border-top-left-radius: 6px; /*Terá a borda arredondada em cima na direita*/
+    border-bottom-left-radius: 6px; /*Terá a borda arredondada em baixo na direita*/
+}
+
+/*Colocando o Hover*/
+.previous-button:hover,
+.next-button:hover {
+    background-color: rgba(0, 0, 0, 0.4); /*Esse 0.4 é 40% de transparência*/
+
+}
+
+/*Fazendo uma leve transição entre as imagens*/
+.fade {
+    animation-name: fade;
+    animation-duration: 1.2s;
+}
+
+@keyframes fade{
+    from {
+    opacity: 0.8;
+    }
+
+    to{
+    opacity: 1;
+    }
+}
+
+#Titulo{
+    text-align: center;
+    z-index: 1;
+}
+
+.slideshow-container block {
+    position: relative;
+    display: block;
+}
+#Titulo{
+    position: absolute;
+    top: 300px;
+    right: 400px;
+    font-size: 110px;
+    color: #fff;
+    text-shadow: 0px 0px 0px black;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+/*Montando card*/
+.container-card{
+/*Aqui será adicionado sombras de efeito no card*/
+display: flex; /*Definindo o container como Flex */
+flex-direction: row; /*Definindo direção dos itens*/
+flex-wrap: nowrap; /*Todos os itens ficam em uma única linha*/
+justify-content: center; /*Itens ficam centralizados na linha*/
+justify-content: space-evenly;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+transition: 0.3s;
+background-color: #444C38;
+padding: 20px 20px 20px 20px;
+}
+
+.card:hover{
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 10);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-content:baseline;
+    padding: 20px 50px 10px 10px;
+    background: #fff;
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+
+}
+
+.imgs{ /*Imagens dos cards*/
+    padding: 1px 10px 10px 10px;
+
+}
+
+h4,p{
+    margin-left: 10px;
+}
+
+.link{
+    margin-left: 10px;
+    color: #444C38;
+    margin-top: 15px;
+
+}
