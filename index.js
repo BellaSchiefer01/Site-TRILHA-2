@@ -22,3 +22,10 @@ changeSlideButtons.forEach(button => {
     slides.children[indexActiveSlide].dataset.active = true
   })
 })  
+
+
+//Evento de clique
+document.getElementById('Botão').addEventListener('click', () => {
+  document.getElementById('clickMessage').innerText = 'Botão foi clicado!'
+});
+

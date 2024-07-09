@@ -1,0 +1,202 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #444C38;;
+}
+
+nav{
+    background: #444C38;
+    position: relative;
+    z-index: 1;
+}
+
+nav li{
+    display: inline-block;
+
+
+}
+
+nav li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+
+
+}
+
+nav li a:hover{
+background-color:#8F9779;
+
+}
+
+.dropdown-menu{
+    position: absolute;
+    box-shadow: 0 0 2px black;
+    display: none; /*Não exibir ele por padrão*/
+    background-color: #444C38;
+
+}
+
+.dropdown-menu a{
+    display: block;
+    color: white;
+
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+
+}
+
+/*Colocando o logo la direita*/
+#Logo {
+    position: absolute; /* Posição está relativa com isso posso colocar imagem onde quiser*/
+    border-radius: 20px; /*Borda*/
+    right: 20PX;
+    height: 50px;
+    
+}
+
+.Img1{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.5;
+    border-style: groove;
+    border-color: 5px #8F9779;
+}
+
+
+
+.Title{
+    position:absolute;
+    margin-top: 60px;
+    font-family: Copperplate, Papyrus, fantasy;
+    color: #fff;
+    margin-left: 100px;
+    font-size: 40px;
+    z-index: 1;
+}
+.Text{
+    margin-top: 70px;
+    color: #fff;
+    margin-left: 120px;
+}
+
+.container1{
+    position: absolute;
+    margin-top: 80px;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+iframe{
+    border-radius: 10px;
+}
+
+.tours{
+    margin-top:2000px;
+    margin-left: 120px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+
+}
+
+.imagens{
+    margin: 50px;
+    border-radius: 6px; 
+
+}
+
+.Textos{
+    position: absolute;
+    margin-top: 2000px;
+    margin-left: 550px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text{
+    color: #fff;
+}
+
+.text2{
+    color: #fff;
+    margin-top: 300px;
+}
+
+.text3{
+    color: #fff;
+    margin-top: 300px;
+}
+
+footer{
+    background: #444C38;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size:20px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav{
+        display: block;
+    }   
+  
+    .container-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .Title{
+        font-size: 20px;
+        margin-top: 2%;
+        margin-left: 40px;
+    }
+    .Text{
+        margin: 10px;
+        font-size: 12px;
+        margin-left: 20px;
+        margin-top: 1px;
+    }
+    .container1{
+        display: flex;
+        flex-direction: column;
+    }
+    iframe{
+        margin-top: 50px;
+        width: 80px;
+        height: 80px;
+    }
+    .tours{
+        position: absolute;
+        margin-top: 170px;
+    }
+    .imagens{
+        margin-top: 10px;
+        margin-right: 440px;
+        width: 50px;
+        height: 60px;
+    }
+    .Textos{
+        position: absolute;
+        font-size: 6px;
+        margin-top: 0px;
+        margin-left: 100px;
+    }
+  
+    #Logo{
+        width: 70px;
+    }
+  
+  }

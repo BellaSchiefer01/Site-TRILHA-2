@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:  #A9BA9D;
+}
+
+nav{
+    background: #444C38;
+    position: relative;
+    z-index: 1;
+}
+
+nav li{
+    display: inline-block;
+
+}
+
+nav li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+
+nav li a:hover{
+background-color:#8F9779;
+}
+
+.dropdown-menu{
+    position: absolute;
+    box-shadow: 0 0 2px black;
+    display: none; /*Não exibir ele por padrão*/
+    background-color: #444C38;
+}
+
+.dropdown-menu a{
+    display: block;
+    color: white;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.Capalocal{
+    opacity: 0.8;
+    
+}
+
+
+/*Colocando o logo la direita*/
+#Logo {
+    position: absolute; /* Posição está relativa com isso posso colocar imagem onde quiser*/
+    border-radius: 20px; /*Borda*/
+    right: 20PX;
+    height: 50px;
+    
+}
+
+#Título{
+    position: absolute;
+    top: 130px;
+    right: 510px;
+    font-size: 100px;
+    color: #fff;
+    text-shadow: 0px 0px 0px black;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+.fundo{
+    display: flex;
+    background-color: #444C38;
+    margin-top: 80px;
+    align-items: center;
+    flex-direction: column;
+    padding: 16px;
+    margin-left: 250px;
+    margin-right: 250px;
+    border-radius: 7px;
+    border-style: solid;
+    border-color: #fff;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 6);
+}
+
+.Dog{
+    z-index: -1;
+    opacity: 0.4;
+    position: absolute;
+    top:930px;
+    right: -90px;
+
+}
+
+p{
+    color: #fff;
+}
+
+#subtitulo{
+    margin-top: 50px;
+    background-color: #A9BA9D;
+    padding: 20px;
+    border-radius: 40px ;
+    border-style: solid;
+    border-color: #fff;
+    box-shadow: #444C38;
+
+}
+
+#Mapalocal{
+    margin-top: 50px;
+    border-style: solid;
+    border-color: gray;
+}
+
+footer{
+    margin-top: 400px;
+    background: #444C38;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size:20px;
+}
+
+@media screen and (max-width: 768px) {
+    /* Styles for screens smaller than 768px wide */
+  
+    /* Navigation Menu */
+    .nav{
+        display: block;
+    }  
+  
+    /* Title */
+    #Título {
+      font-size: 60px; /* Reduce font size for better readability */
+      top: 80px;     /* Adjust position if needed */
+      right: 70px;    /* Adjust position if needed */
+    }
+  
+    /* Fundo (Background) */
+    .fundo {
+      margin-left: 20px;  /* Reduce margin for smaller screens */
+      margin-right: 20px;  /* Reduce margin for smaller screens */
+    }
+  
+    /* Dog Image */
+    .Dog {
+      top: 500px;      /* Adjust position if needed */
+      right: -50px;     /* Adjust position if needed */
+    }
+  
+    /* Subtítulo (Subtitle) */
+    #subtitulo {
+      padding: 15px;  /* Reduce padding for better fit */
+    }
+    #Logo{
+        width: 70px;
+    }
+
+}

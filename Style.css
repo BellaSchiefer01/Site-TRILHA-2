@@ -4,9 +4,12 @@
     box-sizing: border-box;
 }
 
+
 body {
     background-color: #8F9779;
 }
+
+
 
 nav{
     background: #444C38;
@@ -27,13 +30,14 @@ nav li a{
 }
 
 nav li a:hover{
-    background-color: #444C38;
+background-color:#8F9779;
 }
 
 .dropdown-menu{
     position: absolute;
     box-shadow: 0 0 2px black;
     display: none; /*Não exibir ele por padrão*/
+    background-color: #444C38;
 }
 
 .dropdown-menu a{
@@ -229,4 +233,72 @@ h4,p{
     color: #444C38;
     margin-top: 15px;
 
+}
+
+/*Texto de inicio*/
+.container-grid{
+    display: grid; /*Tornando o elemento um display grid*/
+    grid-template-columns: auto auto;
+    border-color: #A9BA9D;
+    border-style:dashed;
+    background:#444C38;
+    align-items: center;
+    padding: 26px;
+
+}
+
+#Text{
+    color: #fff;
+}
+
+
+footer{
+    background: #444C38;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size:20px;
+
+}
+
+
+
+#botãoint{
+    display: flex;
+    justify-content:center ;
+    padding: 20px;
+}
+
+#Botão{
+    background-color: #444C38;
+    color: #fff;
+    font-size: 15PX;
+    padding: 20px;
+    border-radius: 10px;
+    border-color: #fff;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 6);
+}
+#Botão:hover{
+    transition: 0.2s;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+    .nav{
+        display: block;
+    }   
+
+    .container-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .card{
+        margin-top: 16px;
+    }
+    #Logo{
+        width: 70px;
+    }
 }
