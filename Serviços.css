@@ -148,55 +148,70 @@ footer{
 }
 
 @media screen and (max-width: 768px) {
-    .nav{
-        display: block;
-    }   
-  
-    .container-card{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    body {
         
+        background-color: #8F9779;
+      }
+    
+      nav {
+        display: block; 
+      }
+      nav li {
+       
+        margin-right: 10px;
+      }
+    
+      .Img1 {
+        display: none;
+      }
+    
+      .Title {
+        font-size: 20px; 
+        margin-top: 20px;
+        margin-left: 10px; 
+      }
+    
+      .Text {
+        font-size: 14px; 
+        margin-top: 10px; 
+        margin-left: 5px; 
+      }
+    
+      .container1 {
+        flex-direction: column; 
+        align-items: center; 
+      }
+    
+      iframe {
+        margin-top: 50px; 
+        width: 80px; 
+        height: 80px; 
+      }
+    
+      .tours {
+        margin-top: 100px; 
+        margin-left: 20px; 
+      }
+    
+      .imagens {
+        margin: 190px; 
+        width: 100px; 
+        height: 100px; 
+      }
+    
+      .Textos {
+        position: static; 
+        margin-top: 290px; 
+        margin-left: 10px; 
+        font-size: 12px; 
+      }
+    
+      #Logo {
+        width: 50px; 
+      }
+    
+      footer {
+        margin-top: 1800px; 
+
+      }
     }
-    .Title{
-        font-size: 20px;
-        margin-top: 2%;
-        margin-left: 40px;
-    }
-    .Text{
-        margin: 10px;
-        font-size: 12px;
-        margin-left: 20px;
-        margin-top: 1px;
-    }
-    .container1{
-        display: flex;
-        flex-direction: column;
-    }
-    iframe{
-        margin-top: 50px;
-        width: 80px;
-        height: 80px;
-    }
-    .tours{
-        position: absolute;
-        margin-top: 170px;
-    }
-    .imagens{
-        margin-top: 10px;
-        margin-right: 440px;
-        width: 50px;
-        height: 60px;
-    }
-    .Textos{
-        position: absolute;
-        font-size: 6px;
-        margin-top: 0px;
-        margin-left: 100px;
-    }
-  
-    #Logo{
-        width: 70px;
-    }
-  
-  }

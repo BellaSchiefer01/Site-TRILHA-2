@@ -152,33 +152,41 @@ footer{
 
 @media screen and (max-width: 768px) {
 
-
-    .nav{
-        display: block;
-    } 
+    /* Menu */
+    nav{
+      display: block; /* Mudar para bloco para empilhar itens verticalmente */
+    }
   
   
-
+    /* Logo */
+    #Logo {
+      width: 70px; /* Reduzir largura da logo */
+    }
+  
+  
+    /* Formulário */
     .Formulário {
-      position: relative; 
-      top: auto;         
-      right: auto;        
-      margin: 20px;      
+      position: static; /* Remover posicionamento absoluto */
+      width: 60%; /* Reduzir largura do formulário */
+      margin: 40px;
     }
   
-    /* Form Fields */
-    #caixa1, #caixa2, #caixa3 {
-      width: 100%;  
+    #check, #caixa1, #caixa2, #caixa3 {
+      width: 100%; /* Tornar caixas do formulário 100% da largura */
     }
-  
-    /* Text Area */
-    textarea {
-      width: 100%;  
-    }
-    #Logo{
-        width: 70px;
-    }
-  }
 
+  
+    /* Botão */
+    #botao {
+      font-size: 14px; /* Reduzir tamanho da fonte do botão */
+    }
+    #Imagem{
+        display: none;
+    }
+    footer{
+        margin-top: 200px;
+    }
+    
+  }
 
 
